@@ -1,0 +1,5 @@
+name: ProxyOnly
+version: 1.0
+author: Delta203
+
+main: de.proxyonly.delta203.plugin.ProxyOnly

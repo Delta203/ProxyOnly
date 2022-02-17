@@ -1,0 +1,11 @@
+# ProxyOnly 1.0
+# Plugin by Delta203
+# Requires Spigot
+
+# host-ip adress
+ip: '127.0.0.1'
+
+# Enable or disable printing player connection into console
+print_connection: false
+
+disallow_message: '&cPlease join with the right server address!'
