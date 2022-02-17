@@ -3,6 +3,7 @@ package de.proxyonly.delta203.plugin;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerLoginEvent;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -20,7 +21,7 @@ public class ProxyOnly extends JavaPlugin implements Listener {
 		Bukkit.getPluginManager().registerEvents(this, this);
 	}
 	
-	@EventHandler
+	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onLogin(PlayerLoginEvent e) {
 		Player p = e.getPlayer();
 		if(ConfigYML.get().getBoolean("print_connection")) {
